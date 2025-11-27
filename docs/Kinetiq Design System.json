@@ -1,0 +1,172 @@
+{
+  "design_system": {
+    "branding": {
+      "style": "futuristic creative-agency",
+      "themes": {
+        "dark": {
+          "background": "#000000",
+          "accents": ["#1F0AFF", "#4B28FF", "#7343FF", "#9B59FF"],
+          "gradient_blur_spots": [
+            {
+              "type": "radial",
+              "color": "rgba(70, 0, 255, 0.55)",
+              "size": "520px",
+              "position": "top-left",
+              "blur": "200px"
+            },
+            {
+              "type": "radial",
+              "color": "rgba(10, 0, 120, 0.6)",
+              "size": "480px",
+              "position": "center-right",
+              "blur": "220px"
+            }
+          ]
+        }
+      },
+      "logo": {
+        "type": "minimal_solid_mark",
+        "features": ["geometric", "monochrome", "sharp_edges"]
+      }
+    },
+
+    "layout": {
+      "container": {
+        "width": "1240px",
+        "padding": "0 1.5rem",
+        "max_width_behavior": "centered"
+      },
+      "sections": {
+        "hero": {
+          "height": "90vh",
+          "background": "dark + neon radial gradients + soft blurs",
+          "headline_size": "clamp(2rem, 5vw, 4rem)",
+          "layout": "left text block, right floating 3D element"
+        },
+        "impact_grid": {
+          "columns": 2,
+          "gap": "2.5rem",
+          "card_style": "image-top, title-bottom, arrow-icon"
+        },
+        "services_list": {
+          "layout": "vertical list",
+          "item_style": {
+            "border_bottom": "1px solid rgba(255,255,255,0.08)",
+            "hover_arrow": "slide-right",
+            "typography": "semi-bold, wide spacing"
+          }
+        },
+        "testimonial_block": {
+          "layout": "2-column",
+          "image_left": true,
+          "quote_style": "thin, large leading, soft white"
+        },
+        "footer": {
+          "columns": 4,
+          "logo_block": true,
+          "social_icons": "minimal outline"
+        }
+      }
+    },
+
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#A3A3A3",
+      "accent_neon": "#6A4BFF",
+      "accent_blue": "#1D19FF",
+      "background_dark": "#000000",
+      "border_low_opacity": "rgba(255,255,255,0.1)"
+    },
+
+    "typography": {
+      "main_font": "sans-serif geometric (like Inter/General Sans)",
+      "weights": ["400", "500", "600", "700"],
+      "heading_style": {
+        "transform": "none",
+        "tracking": "-0.02em",
+        "line_height": "1.1"
+      },
+      "body_style": {
+        "opacity": 0.75,
+        "line_height": "1.6"
+      },
+      "small_text": {
+        "size": "0.875rem",
+        "opacity": 0.6
+      }
+    },
+
+    "components": {
+      "buttons": {
+        "primary": {
+          "background": "#FFFFFF",
+          "color": "#000000",
+          "radius": "40px",
+          "padding": "0.75rem 1.8rem"
+        },
+        "ghost": {
+          "border": "1px solid rgba(255,255,255,0.3)",
+          "color": "#FFFFFF",
+          "radius": "40px"
+        }
+      },
+      "cards": {
+        "portfolio": {
+          "image_ratio": "4:3",
+          "hover_effect": "darken + zoom slight",
+          "title_style": "small-uppercase, white, medium weight",
+          "arrow_icon": "thin, minimal"
+        },
+        "service_row": {
+          "hover_background": "rgba(255,255,255,0.03)",
+          "arrow_slide_transition": "0.25s"
+        }
+      },
+      "nav": {
+        "style": "top fixed",
+        "background_opacity": 0,
+        "link_spacing": "2rem",
+        "link_style": "small, semi-bold, low-opacity"
+      }
+    },
+
+    "backgrounds": {
+      "global_dark_gradient": {
+        "type": "radial-multi",
+        "layers": [
+          {
+            "color": "rgba(40, 0, 255, 0.45)",
+            "size": "800px",
+            "position": "top-left",
+            "blur": "300px"
+          },
+          {
+            "color": "rgba(140, 75, 255, 0.45)",
+            "size": "900px",
+            "position": "center",
+            "blur": "400px"
+          }
+        ],
+        "tailwind_equivalent": "bg-black before:absolute before:bg-[radial-gradient(circle,rgba(40,0,255,0.45)_0%,transparent_70%)]"
+      }
+    },
+
+    "effects": {
+      "blur_spots": {
+        "type": "radial-gradient",
+        "soft_edges": true,
+        "opacity_range": "0.3–0.6",
+        "tailwind_filters": ["blur-3xl", "brightness-125"]
+      },
+      "hover_interactions": {
+        "portfolio_image_zoom": "scale(1.04)",
+        "arrow_shift": "translateX(6px)"
+      }
+    },
+
+    "icons": {
+      "style": "thin-line, minimal, angled-arrows",
+      "stroke_width": "1.5"
+    }
+  }
+}

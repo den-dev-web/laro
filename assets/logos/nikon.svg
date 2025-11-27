@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="60">
+  <defs>
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feFlood flood-color="cyan" result="flood"/>
+      <feComposite in="flood" in2="SourceAlpha" operator="in" result="mask"/>
+      <feGaussianBlur in="mask" stdDeviation="1.2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="138" height="58" rx="2"
+    fill="none" stroke="cyan" stroke-width="1.2" />
+
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+    font-family="Arial, sans-serif" font-size="22"
+    fill="white" filter="url(#innerGlow)">
+    Nikon
+  </text>
+</svg>
