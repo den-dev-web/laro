@@ -1,292 +1,791 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>LARO — Your Trusted Electronics Partner</title>
-  <meta name="description" content="LARO — Fast. Certain. Everywhere." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="dist/styles.css"> 
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
 
-<body class="relative z-2 bg-black">
+    <title>LARO — Your Trusted Electronics Partner</title>
+    <meta name="description" content="LARO — Fast. Certain. Everywhere." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
 
-  <!-- NAV -->
-  <header class="sticky top-0 z-30 bg-transparent h-[60px] md:h-[70px] flex items-center backdrop-blur-xl md:backdrop-blur-3xl border-b-[1px] border-solid border-b-[rgba(2,0,0,.5)]">
-    <div class="mx-auto max-w-7xl px-3 sm:px-4 flex items-center justify-between w-full">
-      <div class="flex gap-2 md:gap-4 items-center flex-shrink-0">
-        <img src="assets/logo_1.png" alt="LARO Logo" class="w-10 h-10 md:w-12 md:h-12 max-h-12 rounded-lg object-contain flex-shrink-0">
-        <div class="flex-shrink-0 min-w-0">
-          <div class="font-semibold text-sm md:text-base text-white leading-[1.2] tracking-[0.02em] whitespace-nowrap">LARO</div>
-          <div class="text-secondary text-xs md:text-sm mt-0.5 uppercase tracking-wider hidden md:block whitespace-nowrap">Fast. Certain. Everywhere.</div>
+  <body class="relative z-2 bg-black">
+    <!-- NAV -->
+    <header
+      class="site-header z-30 bg-transparent flex items-center backdrop-blur-xl md:backdrop-blur-3xl border-b-[1px] border-solid border-b-[rgba(2,0,0,.5)] will-change-transform transform-gpu"
+    >
+      <div
+        class="mx-auto max-w-7xl px-3 sm:px-4 flex items-center justify-between w-full"
+      >
+        <div class="flex gap-2 md:gap-4 items-center flex-shrink-0">
+          <img
+            src="assets/logo.png"
+            alt="LARO Logo"
+            class="w-10 h-10 md:w-12 md:h-12 max-h-12 rounded-lg object-contain flex-shrink-0"
+          />
+          <div class="flex-shrink-0 min-w-0">
+            <div
+              class="font-semibold text-sm md:text-base text-white leading-[1.2] tracking-[0.02em] whitespace-nowrap"
+            >
+              LARO
+            </div>
+            <div
+              class="text-secondary text-xs md:text-sm mt-0.5 uppercase tracking-wider hidden md:block whitespace-nowrap"
+            >
+              Fast. Certain. Everywhere.
+            </div>
+          </div>
         </div>
-      </div>
-      
-      <!-- Desktop Navigation -->
-      <nav class="hidden menu-tablet-hidden menu-desktop-flex items-center font-semibold">
-        <a href="#about" class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors">About</a>
-        <a href="#products" class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors">Products</a>
-        <a href="#partners" class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors">Partners</a>
-        <div class="px-6">
-          <a href="#contacts" class="border border-white/30 text-white py-[10px] px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all">Contact</a>
-        </div>
-      </nav>
 
-      <!-- Right side: Contact Button + Burger (visible between 767px and 925px) -->
-      <div class="hidden menu-tablet-flex lg:hidden items-center gap-4">
-        <a href="#contacts" class="flex items-center border border-white/30 text-white py-[10px] px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all text-sm uppercase tracking-[0.05em] font-semibold whitespace-nowrap">Contact</a>
-        <button class="mobile-menu-button w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0" aria-label="Toggle menu" aria-expanded="false">
-          <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
-          <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
-          <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
+        <!-- Desktop Navigation -->
+        <nav
+          class="hidden menu-tablet-hidden menu-desktop-flex items-center font-semibold"
+        >
+          <a
+            href="#about"
+            class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors"
+            >About</a
+          >
+          <a
+            href="#products"
+            class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors"
+            >Products</a
+          >
+          <a
+            href="#partners"
+            class="flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors"
+            >Partners</a
+          >
+          <div class="px-6">
+            <a
+              href="#contacts"
+              class="border border-white/30 text-white py-[10px] px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all"
+              >Contact</a
+            >
+          </div>
+        </nav>
+
+        <!-- Right side: Contact Button + Burger (visible between 767px and 925px) -->
+        <div class="hidden menu-tablet-flex lg:hidden items-center gap-4">
+          <a
+            href="#contacts"
+            class="flex items-center border border-white/30 text-white py-[10px] px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all text-sm uppercase tracking-[0.05em] font-semibold whitespace-nowrap"
+            >Contact</a
+          >
+          <button
+            class="mobile-menu-button w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span
+              class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+            ></span>
+            <span
+              class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+            ></span>
+            <span
+              class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+            ></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Button (visible only below 767px) -->
+        <button
+          class="mobile-menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span
+            class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+          ></span>
+          <span
+            class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+          ></span>
+          <span
+            class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"
+          ></span>
         </button>
       </div>
+    </header>
 
-      <!-- Mobile Menu Button (visible only below 767px) -->
-      <button class="mobile-menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0" aria-label="Toggle menu" aria-expanded="false">
-        <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
-        <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
-        <span class="mobile-menu-line w-5 h-0.5 bg-white/75 transition-all duration-300"></span>
-      </button>
-    </div>
-  </header>
+    <!-- Mobile Menu Overlay (backdrop) -->
+    <div
+      id="mobileMenuOverlay"
+      class="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-xl z-30 transition-opacity duration-300 ease-out opacity-0 pointer-events-none menu-closed"
+    ></div>
 
-  <!-- Mobile Menu Overlay (backdrop) -->
-  <div id="mobileMenuOverlay" class="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-xl z-30 transition-opacity duration-300 ease-out opacity-0 pointer-events-none menu-closed"></div>
-
-  <!-- Mobile Navigation Menu (outside header for proper z-index) -->
-  <nav id="mobileMenu" class="lg:hidden fixed top-[60px] md:top-[70px] right-0 bottom-0 w-[320px] max-w-[85vw] bg-black/95 backdrop-blur-3xl border-l border-white/10 transition-transform duration-300 ease-out z-40 overflow-y-auto menu-closed">
-    <div class="flex flex-col p-6 gap-4">
-      <a href="#about" class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center">About</a>
-      <a href="#products" class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center">Products</a>
-      <a href="#partners" class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center">Partners</a>
-      <a href="#contacts" class="mobile-menu-link border border-white/30 text-white py-4 px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all text-center mt-2">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Main -->
-  <main>
-
-    <!-- HERO -->
-    <section id="hero" class="min-h-[70vh] md:min-h-[70vh] py-12 md:py-20 bg-transparent relative flex items-center">
-      <div class="bg-element-wrapper"><div class="bg-color-left"></div></div>
-      <div class="mx-auto max-w-7xl px-3 sm:px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 flex items-center">
-        <div class="max-w-full order-1 lg:order-1">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl m-0 mb-4 md:mb-6 text-white leading-[1.1] tracking-[-0.02em] font-bold">LARO</h1>
-          <p class="text-base md:text-lg lg:text-[22px] mt-4 md:mt-[24px] mb-6 md:mb-[40px] mx-0 text-white/75 line-height-[1.6] font-normal">
-            We provide reliable supplies of portable electronics with guaranteed speed and predictability.<br>
-            An extensive warehouse network, constant product availability, and streamlined logistics</p>
-          <div class="flex flex-col md:flex-row gap-3 md:gap-4 justify-start mb-6 md:mb-[40px]">
-            <a class="bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all text-center w-full md:w-auto touch-manipulation" href="#contacts">Contact Us</a>
-            <a class="bg-transparent text-white px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline border border-white/30 hover:border-accent-blue hover:bg-accent-blue hover:text-white hover:shadow-glow-blue transition-all text-center w-full md:w-auto touch-manipulation" href="#partners">See Partners</a>
-          </div>
-
-          <ul class="flex flex-col md:flex-row gap-3 md:gap-4 list-none p-0 m-0 text-white/75 text-sm md:text-base lg:text-[17px] justify-start">
-            <li class="flex items-center gap-2">
-              <span class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0">
-                <svg class="w-5 h-5 md:w-6 md:h-6 text-white/75" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                </svg>
-              </span>
-              <a href="tel:+14165551212" class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors">+1 (416) 555-1212</a>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0">
-                <svg class="w-5 h-5 md:w-6 md:h-6 text-white/75" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-              </span>
-              <a href="mailto:info@laro.com" class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors">info@laro.com</a>
-            </li>
-          </ul>
-          <div class="flex gap-2 md:gap-3 justify-start mt-4 md:mt-6">
-            <a href="https://www.facebook.com/laro_fast_certain" aria-label="Facebook" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-              <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/laro_fast_certain" aria-label="Instagram" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-              <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-            </a>
-            <a href="https://twitter.com/laro_fast_certain" aria-label="X (Twitter)" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-              <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-            <a href="https://wa.me/14165551212" aria-label="WhatsApp" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-              <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="w-full flex justify-center items-center order-2 lg:order-2">
-          <!-- product montage / hero image placeholders -->
-          <div class="relative w-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-xl md:backdrop-blur-3xl border border-white/10 md:hover:transform-[perspective(1000px)_rotateY(0deg)_rotateX(0deg)_scale(1.02)_translateZ(0)] transition-transform">
-            <!-- large product image -->
-            <img src="assets/111.png" alt="Electronics products" class="top-0 left-0 w-full h-full object-cover">
-          </div>
-        </div>
+    <!-- Mobile Navigation Menu (outside header for proper z-index) -->
+    <nav
+      id="mobileMenu"
+      class="lg:hidden fixed top-[60px] md:top-[70px] right-0 bottom-0 w-[320px] max-w-[85vw] bg-black/95 backdrop-blur-3xl border-l border-white/10 transition-transform duration-300 ease-out z-40 overflow-y-auto menu-closed"
+    >
+      <div class="flex flex-col p-6 gap-4">
+        <a
+          href="#about"
+          class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center"
+          >About</a
+        >
+        <a
+          href="#products"
+          class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center"
+          >Products</a
+        >
+        <a
+          href="#partners"
+          class="mobile-menu-link text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center"
+          >Partners</a
+        >
+        <a
+          href="#contacts"
+          class="mobile-menu-link border border-white/30 text-white py-4 px-6 rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all text-center mt-2"
+          >Contact</a
+        >
       </div>
-    </section>
+    </nav>
 
-    <!-- ABOUT -->
-    <section id="about" class="relative py-12 md:py-16 lg:py-20 bg-transparent">
-      <div class="bg-element-wrapper"><div class="bg-color-right offset"></div></div>
-      <div class="mx-auto max-w-7xl px-3 sm:px-4">
-        <!-- <div class="text-left mb-6 md:mb-10">
+    <!-- Main -->
+    <main class="site-main">
+      <!-- HERO -->
+      <section
+        id="hero"
+        class="min-h-[70vh] md:min-h-[70vh] py-12 md:py-20 bg-transparent relative flex items-center"
+      >
+        <div class="mx-auto max-w-7xl bg-element-wrapper">
+          <div class="bg-color-left"></div>
+        </div>
+        <div
+          class="mx-auto max-w-7xl px-3 sm:px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 flex items-center"
+        >
+          <div class="max-w-full order-1 lg:order-1">
+            <h1
+              class="text-4xl md:text-6xl lg:text-7xl m-0 mb-4 md:mb-6 text-white leading-[1.1] tracking-[-0.02em] font-bold"
+            >
+              LARO
+            </h1>
+            <p
+              class="text-base md:text-lg lg:text-[22px] mt-4 md:mt-[24px] mb-6 md:mb-[40px] mx-0 text-white/75 line-height-[1.6] font-normal"
+            >
+              We provide reliable supplies of portable electronics with
+              guaranteed speed and predictability.<br />
+              An extensive warehouse network, constant product availability, and
+              streamlined logistics
+            </p>
+            <div
+              class="flex flex-col md:flex-row gap-3 md:gap-4 justify-start mb-6 md:mb-[40px]"
+            >
+              <a
+                class="bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all text-center w-full md:w-auto touch-manipulation"
+                href="#contacts"
+                >Contact Us</a
+              >
+              <a
+                class="bg-transparent text-white px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline border border-white/30 hover:border-accent-blue hover:bg-accent-blue hover:text-white hover:shadow-glow-blue transition-all text-center w-full md:w-auto touch-manipulation"
+                href="#partners"
+                >See Partners</a
+              >
+            </div>
+
+            <ul
+              class="flex flex-col md:flex-row gap-3 md:gap-4 list-none p-0 m-0 text-white/75 text-sm md:text-base lg:text-[17px] justify-start"
+            >
+              <li class="flex items-center gap-2">
+                <span
+                  class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0"
+                >
+                  <svg
+                    class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                </span>
+                <a
+                  href="tel:+14165551212"
+                  class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors"
+                  >+1 (416) 555-1212</a
+                >
+              </li>
+              <li class="flex items-center gap-2">
+                <span
+                  class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0"
+                >
+                  <svg
+                    class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </span>
+                <a
+                  href="mailto:info@laro.com"
+                  class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors"
+                  >info@laro.com</a
+                >
+              </li>
+            </ul>
+            <div class="flex gap-2 md:gap-3 justify-start mt-4 md:mt-6">
+              <a
+                href="https://www.facebook.com/laro_fast_certain"
+                aria-label="Facebook"
+                class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/laro_fast_certain"
+                aria-label="Instagram"
+                class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://twitter.com/laro_fast_certain"
+                aria-label="X (Twitter)"
+                class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/14165551212"
+                aria-label="WhatsApp"
+                class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+              >
+                <svg
+                  class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="w-full flex justify-center items-center order-2 lg:order-2"
+          >
+            <!-- product montage / hero image placeholders -->
+            <div
+              class="relative w-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-xl md:backdrop-blur-3xl border border-white/10 md:hover:transform-[perspective(1000px)_rotateY(0deg)_rotateX(0deg)_scale(1.02)_translateZ(0)] transition-transform"
+            >
+              <!-- large product image -->
+              <img
+                src="assets/header.jpg"
+                alt="Electronics products"
+                class="top-0 left-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section
+        id="about"
+        class="relative py-12 md:py-16 lg:py-20 bg-transparent"
+      >
+        <div class="mx-auto max-w-7xl bg-element-wrapper">
+          <div class="bg-color-right offset"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-3 sm:px-4">
+          <!-- <div class="text-left mb-6 md:mb-10">
           <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]">About</h2>
         </div>-->
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 transform-gpu mb-6 md:mb-10">
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">✓</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Quality Products</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">We supply certified products from reputable manufacturers to ensure long-term reliability.</p>
-          </div>
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">🚚</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Global Logistics</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">Fast and traceable delivery with optimized routes and trusted carriers.</p>
-          </div>
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">🤝</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Trusted Partners</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">Long-term partnerships with top brands provide consistent availability and support.</p>
-          </div>
-        </div>
-        
-        <div class="text-left">
-          <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
-            LARO is a dynamic international distributor of portable electronics, focused on speed, transparency and predictability of supply.
-          </p>
-          <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
-            We connect manufacturers and retailers, ensuring seamless logistics, stable product availability, and a high level of service. Our model is based on precise warehouse network management and efficient collaboration with distributors and resellers.            </p>
-          <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
-            LARO's key goal is to simplify the supply chain and make it as fast and reliable as possible.
-          </p>
-          <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
-            We accumulate demanded devices, guarantee timely shipments, and maintain a high level of information for partners. This approach reduces operational risks, accelerates sales, and helps businesses grow confidently.
-          </p>
-          <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
-            With us, companies receive not just a supplier, but a logistic partner with clear processes, a global perspective, and impeccable execution discipline.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <!-- PRODUCTS -->
-    <section id="products" class="relative py-12 md:py-20 bg-transparent">
-      <div class="mx-auto max-w-7xl px-3 sm:px-4">
-        <div class="text-left mb-6 md:mb-10">
-          <h2 class="text-3xl md:text-4xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]">Product Categories</h2>
-          <p class="text-white/75 max-w-full m-0 font-normal opacity-75">The main categories of products that we regularly supply to our customers.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 transform-gpu" style="contain: layout style;">
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up" data-delay="80">
-            <img src="assets/phone.png" alt="Phones" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Phones</h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 transform-gpu mb-6 md:mb-10"
+          >
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">✓</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Quality Products
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                We supply certified products from reputable manufacturers to
+                ensure long-term reliability.
+              </p>
             </div>
-          </article>
-
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up">
-            <img src="assets/headphones.png" alt="Headphones" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Headphones</h3>
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">🚚</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Global Logistics
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                Fast and traceable delivery with optimized routes and trusted
+                carriers.
+              </p>
             </div>
-          </article>
-
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up" data-delay="40">
-            <img src="assets/laptop.png" alt="Laptops" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Laptops</h3>
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">🤝</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Trusted Partners
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                Long-term partnerships with top brands provide consistent
+                availability and support.
+              </p>
             </div>
-          </article>
-
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up" data-delay="120">
-            <img src="assets/photo.png" alt="Cameras" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Cameras</h3>
-            </div>
-          </article>
-
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up" data-delay="80">
-            <img src="assets/power_bank.png" alt="Power Banks" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Power Banks</h3>
-            </div>
-          </article>
-
-          <article class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group" style="contain: layout style;" data-anim="fade-up" data-delay="120">
-            <img src="assets/tablet.png" alt="Tablets" class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]" loading="lazy" decoding="async" style="will-change: auto;">
-            <div class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5">
-              <h3 class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full">Tablets</h3>
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- WHO DO WE WORK WITH -->
-    <section id="who-we-work-with" class="relative py-12 md:py-20 bg-transparent">
-      <div class="bg-element-wrapper"><div class="bg-color-left"></div></div>
-      <div class="mx-auto max-w-7xl px-3 sm:px-4">
-        <div class="text-left mb-10">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]">Who do we work with?</h2>
-        </div>
-
-        <div class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 transform-gpu">
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">🛒</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Retail chains and online stores</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">We ensure a stable flow of goods, facilitating planning and assortment management.</p>
           </div>
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">📦</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Wholesale companies and resellers</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">We guarantee timely shipments, availability of popular models, and predictable deliveries.</p>
-          </div>
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">🏢</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Corporate sector</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">We supply equipment to companies that prioritize deadlines, volumes, and quality control.</p>
-          </div>
-          <div class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all">
-            <div class="text-accent-purple text-4xl mb-4">⚙️</div>
-            <h4 class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Manufacturers and brands</h4>
-            <p class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]">We build partnerships that expand our market presence and increase distribution speed.</p>
+
+          <div class="text-left">
+            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+              LARO is a dynamic international distributor of portable
+              electronics, focused on speed, transparency and predictability of
+              supply.
+            </p>
+            <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
+              We connect manufacturers and retailers, ensuring seamless
+              logistics, stable product availability, and a high level of
+              service. Our model is based on precise warehouse network
+              management and efficient collaboration with distributors and
+              resellers.
+            </p>
+            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+              LARO's key goal is to simplify the supply chain and make it as
+              fast and reliable as possible.
+            </p>
+            <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
+              We accumulate demanded devices, guarantee timely shipments, and
+              maintain a high level of information for partners. This approach
+              reduces operational risks, accelerates sales, and helps businesses
+              grow confidently.
+            </p>
+            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+              With us, companies receive not just a supplier, but a logistic
+              partner with clear processes, a global perspective, and impeccable
+              execution discipline.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- PARTNERS -->
-    <section id="partners" class="relative py-12 md:py-20 bg-transparent">
-      <div class="bg-element-wrapper"><div class="bg-color-right"></div></div>
-      <div class="mx-auto max-w-7xl px-3 sm:px-4">
-        <div class="text-left mb-10">
-          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]">Our Partners</h2>
-          <p class="text-white/75 max-w-full m-0 font-normal opacity-75">We work with leading manufacturers and brands in the electronics industry.</p>
+      <!-- PRODUCTS -->
+      <section id="products" class="relative py-12 md:py-20 bg-transparent">
+        <div class="mx-auto max-w-7xl px-3 sm:px-4">
+          <div class="text-left mb-6 md:mb-10">
+            <h2
+              class="text-3xl md:text-4xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]"
+            >
+              Product Categories
+            </h2>
+            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+              The main categories of products that we regularly supply to our
+              customers.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 transform-gpu"
+            style="contain: layout style"
+          >
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+              data-delay="80"
+            >
+              <img
+                src="assets/phone.png"
+                alt="Phones"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Phones
+                </h3>
+              </div>
+            </article>
+
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+            >
+              <img
+                src="assets/headphones.png"
+                alt="Headphones"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Headphones
+                </h3>
+              </div>
+            </article>
+
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+              data-delay="40"
+            >
+              <img
+                src="assets/laptop.png"
+                alt="Laptops"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Laptops
+                </h3>
+              </div>
+            </article>
+
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+              data-delay="120"
+            >
+              <img
+                src="assets/photo.png"
+                alt="Cameras"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Cameras
+                </h3>
+              </div>
+            </article>
+
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+              data-delay="80"
+            >
+              <img
+                src="assets/power_bank.png"
+                alt="Power Banks"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Power Banks
+                </h3>
+              </div>
+            </article>
+
+            <article
+              class="product-card-v3 flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100 group"
+              style="contain: layout style"
+              data-anim="fade-up"
+              data-delay="120"
+            >
+              <img
+                src="assets/tablet.png"
+                alt="Tablets"
+                class="pc-image w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1]"
+                loading="lazy"
+                decoding="async"
+                style="will-change: auto"
+              />
+              <div
+                class="relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5"
+              >
+                <h3
+                  class="text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full"
+                >
+                  Tablets
+                </h3>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:flex xl:flex-wrap gap-4 justify-center items-center transform-gpu" aria-label="Partners logos">
-          <!-- logos are grayscale by default, color on hover -->
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/jbl.svg" alt="JBL" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/lenovo.svg" alt="Lenovo" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/nikon.svg" alt="Nikon" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/oneplus.svg" alt="OnePlus" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/sony.svg" alt="Sony" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/samsung.svg" alt="Samsung" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/xiaomi.svg" alt="Xiaomi" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/apple.svg" alt="Apple" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
-          <!-- 
+      <!-- WHO DO WE WORK WITH -->
+      <section
+        id="who-we-work-with"
+        class="relative py-12 md:py-20 bg-transparent"
+      >
+        <div class="mx-auto max-w-7xl bg-element-wrapper">
+          <div class="bg-color-left"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-3 sm:px-4">
+          <div class="text-left mb-10">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]"
+            >
+              Who do we work with?
+            </h2>
+          </div>
+
+          <div
+            class="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 transform-gpu"
+          >
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">🛒</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Retail chains and online stores
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                We ensure a stable flow of goods, facilitating planning and
+                assortment management.
+              </p>
+            </div>
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">📦</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Wholesale companies and resellers
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                We guarantee timely shipments, availability of popular models,
+                and predictable deliveries.
+              </p>
+            </div>
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">🏢</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Corporate sector
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                We supply equipment to companies that prioritize deadlines,
+                volumes, and quality control.
+              </p>
+            </div>
+            <div
+              class="bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <div class="text-accent-purple text-4xl mb-4">⚙️</div>
+              <h4
+                class="my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Manufacturers and brands
+              </h4>
+              <p
+                class="text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6]"
+              >
+                We build partnerships that expand our market presence and
+                increase distribution speed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PARTNERS -->
+      <section id="partners" class="relative py-12 md:py-20 bg-transparent">
+        <div class="mx-auto max-w-7xl bg-element-wrapper">
+          <div class="bg-color-right"></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-3 sm:px-4">
+          <div class="text-left mb-10">
+            <h2
+              class="text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]"
+            >
+              Our Partners
+            </h2>
+            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+              We work with leading manufacturers and brands in the electronics
+              industry.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:flex xl:flex-wrap gap-4 justify-center items-center transform-gpu"
+            aria-label="Partners logos"
+          >
+            <!-- logos are grayscale by default, color on hover -->
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/jbl.svg"
+                alt="JBL"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/lenovo.svg"
+                alt="Lenovo"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/nikon.svg"
+                alt="Nikon"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/oneplus.svg"
+                alt="OnePlus"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/sony.svg"
+                alt="Sony"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/samsung.svg"
+                alt="Samsung"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/xiaomi.svg"
+                alt="Xiaomi"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <div
+              class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"
+            >
+              <img
+                src="assets/logos/apple.svg"
+                alt="Apple"
+                class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"
+              />
+            </div>
+            <!-- 
           <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/belkin.svg" alt="Belkin" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
           <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/canon.svg" alt="Canon" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
           <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/lg.svg" alt="LG" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
@@ -296,114 +795,268 @@
           <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/harman-kardon.svg" alt="Harman Kardon" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
           <div class="w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all"><img src="assets/logos/logitech.svg" alt="Logitech" class="max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain"></div>
           
-          -->
+          --></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACTS -->
-    <section id="contacts" class="relative py-12 md:py-20 bg-transparent contacts">
-      <div class="mx-auto max-w-7xl px-3 sm:px-4">
-        <div class="text-left mb-6 md:mb-10">
-          <h2 class="text-3xl md:text-4xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]">Contact Us</h2>
-          <p class="text-white/75 max-w-full m-0 font-normal opacity-75">Reach out for inquiries, quotes, and partnership discussions.</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 transform-gpu">
-          <div class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10">
-            <h3 class="my-3 md:my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Get in touch</h3>
-            <ul class="list-none p-0 m-0 text-white/75 text-base md:text-[17px] justify-start flex-wrap">
-              <li class="flex items-center gap-2">
-                <span class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0">
-                  <svg class="w-5 h-5 md:w-6 md:h-6 text-white/75" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                  </svg>
-                </span>
-                <a href="tel:+14165551212" class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors">+1 (416) 555-1212</a>
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0">
-                  <svg class="w-5 h-5 md:w-6 md:h-6 text-white/75" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                  </svg>
-                </span>
-                <a href="mailto:info@laro.com" class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors">info@laro.com</a>
-              </li>
-            </ul>
-            <div class="flex gap-2 md:gap-3 justify-start mt-4 md:mt-6">
-              <a href="https://www.facebook.com/laro_fast_certain" aria-label="Facebook" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-                <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-              </a>
-              <a href="https://www.instagram.com/laro_fast_certain" aria-label="Instagram" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-                <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-              </a>
-              <a href="https://twitter.com/laro_fast_certain" aria-label="X (Twitter)" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-                <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </a>
-              <a href="https://wa.me/14165551212" aria-label="WhatsApp" class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all">
-                <svg class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                </svg>
-              </a>
-            </div>
-            <div class="mt-4 md:mt-6">
-              <h4 class="mb-2 md:mb-3 text-base md:text-[18px] font-semibold leading-[1.1] tracking-[-0.02em] text-white">Office Location</h4>
-              <div class="w-full h-[250px] md:h-[300px] rounded-xl overflow-hidden border border-white/10">
-                <iframe 
-                  src="https://www.google.com/maps?q=43.6479,-79.3808&hl=en&z=15&output=embed"
-                  width="100%" 
-                  height="100%" 
-                  style="border:0; filter: grayscale(0.3) contrast(1.1) brightness(0.9);" 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="LARO Office Location">
-                </iframe>
-              </div>
-            </div>
+      <!-- CONTACTS -->
+      <section
+        id="contacts"
+        class="relative py-12 md:py-20 bg-transparent contacts"
+      >
+        <div class="mx-auto max-w-7xl px-3 sm:px-4">
+          <div class="text-left mb-6 md:mb-10">
+            <h2
+              class="text-3xl md:text-4xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em]"
+            >
+              Contact Us
+            </h2>
+            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+              Reach out for inquiries, quotes, and partnership discussions.
+            </p>
           </div>
 
-          <form id="contactForm" class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10" method="post" action="#" novalidate>
-            <label class="block mb-3 md:mb-4">
-              <span class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase">Name</span>
-              <input type="text" name="name" required placeholder="Your name" class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal">
-            </label>
-
-            <label class="block mb-3 md:mb-4">
-              <span class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase">Email</span>
-              <input type="email" name="email" required placeholder="you@company.com" class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal">
-            </label>
-
-            <label class="block mb-3 md:mb-4">
-              <span class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase">Message</span>
-              <textarea name="message" rows="5" required placeholder="Tell us about your inquiry" class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal"></textarea>
-            </label>
-
-            <div class="flex flex-col md:flex-row gap-4 justify-start mb-6 md:mb-[40px]">
-              <button type="submit" class="bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all w-full md:w-auto touch-manipulation">Send Message</button>
-              <div id="formStatus" class="text-white/75 text-base md:text-[17px] justify-start flex-wrap mt-2" aria-live="polite"></div>
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 transform-gpu"
+          >
+            <div
+              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10"
+            >
+              <h3
+                class="my-3 md:my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+              >
+                Get in touch
+              </h3>
+              <ul
+                class="list-none p-0 m-0 text-white/75 text-base md:text-[17px] justify-start flex-wrap"
+              >
+                <li class="flex items-center gap-2">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    href="tel:+14165551212"
+                    class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors"
+                    >+1 (416) 555-1212</a
+                  >
+                </li>
+                <li class="flex items-center gap-2">
+                  <span
+                    class="flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0"
+                  >
+                    <svg
+                      class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </span>
+                  <a
+                    href="mailto:info@laro.com"
+                    class="inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors"
+                    >info@laro.com</a
+                  >
+                </li>
+              </ul>
+              <div class="flex gap-2 md:gap-3 justify-start mt-4 md:mt-6">
+                <a
+                  href="https://www.facebook.com/laro_fast_certain"
+                  aria-label="Facebook"
+                  class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.instagram.com/laro_fast_certain"
+                  aria-label="Instagram"
+                  class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://twitter.com/laro_fast_certain"
+                  aria-label="X (Twitter)"
+                  class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://wa.me/14165551212"
+                  aria-label="WhatsApp"
+                  class="social-icon group w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="mt-4 md:mt-6">
+                <h4
+                  class="mb-2 md:mb-3 text-base md:text-[18px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
+                >
+                  Office Location
+                </h4>
+                <div
+                  class="w-full h-[250px] md:h-[300px] rounded-xl overflow-hidden border border-white/10"
+                >
+                  <iframe
+                    src="https://www.google.com/maps?q=43.6479,-79.3808&hl=en&z=15&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="
+                      border: 0;
+                      filter: grayscale(0.3) contrast(1.1) brightness(0.9);
+                    "
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="LARO Office Location"
+                  >
+                  </iframe>
+                </div>
+              </div>
             </div>
-          </form>
+
+            <form
+              id="contactForm"
+              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10"
+              method="post"
+              action="#"
+              novalidate
+            >
+              <label class="block mb-3 md:mb-4">
+                <span
+                  class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase"
+                  >Name</span
+                >
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                  class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal"
+                />
+              </label>
+
+              <label class="block mb-3 md:mb-4">
+                <span
+                  class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase"
+                  >Email</span
+                >
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="you@company.com"
+                  class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal"
+                />
+              </label>
+
+              <label class="block mb-3 md:mb-4">
+                <span
+                  class="m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase"
+                  >Message</span
+                >
+                <textarea
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tell us about your inquiry"
+                  class="w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal"
+                ></textarea>
+              </label>
+
+              <div
+                class="flex flex-col md:flex-row gap-4 justify-start mb-6 md:mb-[40px]"
+              >
+                <button
+                  type="submit"
+                  class="bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all w-full md:w-auto touch-manipulation"
+                >
+                  Send Message
+                </button>
+                <div
+                  id="formStatus"
+                  class="text-white/75 text-base md:text-[17px] justify-start flex-wrap mt-2"
+                  aria-live="polite"
+                ></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="py-4 md:py-6 px-0 bg-black text-white border-t border-white/10 border-solid"
+    >
+      <div class="mx-auto max-w-7xl px-4">
+        <div
+          class="text-center text-white/75 text-sm md:text-[17px] justify-start flex-wrap"
+        >
+          © <span id="year"></span> LARO. All rights reserved.
         </div>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="py-4 md:py-6 px-0 bg-black text-white border-t border-white/10 border-solid">
-    <div class="mx-auto max-w-7xl px-4">
-      <div class="text-center text-white/75 text-sm md:text-[17px] justify-start flex-wrap">© <span id="year"></span> LARO. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>
-

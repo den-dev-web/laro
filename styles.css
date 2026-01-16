@@ -1,29 +1,22 @@
 /* Tailwind CSS 4 import */
 @import "tailwindcss";
 
-/* html,Убеждаемся, что body и html не обрезают фоновые элементы */
-
-body {
-  overflow-x: hidden; /* Предотвращает горизонтальный скролл */
-  /*overflow-y: auto;*/
-}
-
 /* Theme configuration согласно Tailwind 4 */
 @theme {
   /* Основные цвета - используем oklch для лучшей цветопередачи */
   --color-secondary: oklch(0.65 0.01 0);
   --color-accent-purple: oklch(0.52 0.22 280);
   --color-accent-blue: oklch(0.45 0.25 270);
-  
+
   /* Цвета с прозрачностью для градиентов и opacity модификаторов */
   --color-accent-purple-10: oklch(0.52 0.22 280 / 0.1);
   --color-accent-purple-25: oklch(0.52 0.22 280 / 0.25);
   --color-accent-purple-30: oklch(0.52 0.22 280 / 0.3);
   --color-accent-purple-50: oklch(0.52 0.22 280 / 0.5);
-  
+
   --color-accent-blue-10: oklch(0.45 0.25 270 / 0.1);
   --color-accent-blue-35: oklch(0.45 0.25 270 / 0.35);
-  
+
   /* Белый с различной прозрачностью */
   --color-white-03: oklch(1 0 0 / 0.03);
   --color-white-04: oklch(1 0 0 / 0.04);
@@ -31,27 +24,28 @@ body {
   --color-white-10: oklch(1 0 0 / 0.1);
   --color-white-20: oklch(1 0 0 / 0.2);
   --color-white-75: oklch(1 0 0 / 0.75);
-  
+
   /* Черный с прозрачностью */
   --color-black-30: oklch(0 0 0 / 0.3);
-  
+
   /* Специальные цвета */
   --color-border-header: oklch(0.05 0 0 / 0.5);
-  
+
   /* Кастомные шрифты */
   --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  
+
   /* Кастомные размеры текста */
   --text-52: 3.25rem;
   --text-52--line-height: 1.1;
-  
+
   /* Кастомные тени */
   --shadow-glow-purple: 0px 0px 180px oklch(0.52 0.22 280 / 0.3);
   --shadow-glow-blue: 0px 0px 140px oklch(0.45 0.25 270 / 0.35);
   --shadow-card: 0 8px 32px oklch(0 0 0 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.1);
-  --shadow-card-hover: 0 24px 80px oklch(0.52 0.22 280 / 0.25), 0 0 0 1px oklch(0.52 0.22 280 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.2);
-  
+  --shadow-card-hover: 0 24px 80px oklch(0.52 0.22 280 / 0.25),
+    0 0 0 1px oklch(0.52 0.22 280 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.2);
+
   /* Кастомные easing функции */
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
@@ -59,7 +53,7 @@ body {
 
 /* Global background with radial gradient blur spots - нельзя выразить через Tailwind */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -67,9 +61,16 @@ body::before {
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  background: 
-    radial-gradient(circle 520px at top left, rgba(70, 0, 255, 0.55) 0%, transparent 70%),
-    radial-gradient(circle 480px at center right, rgba(10, 0, 120, 0.6) 0%, transparent 70%);
+  background: radial-gradient(
+      circle 520px at top left,
+      rgba(70, 0, 255, 0.55) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle 480px at center right,
+      rgba(10, 0, 120, 0.6) 0%,
+      transparent 70%
+    );
   filter: blur(200px);
   opacity: 1;
   transform: translateZ(0);
@@ -119,16 +120,17 @@ body::before {
   top: -30%;
 }
 
-
 /* Псевдоэлемент ::after для изображений в карточках продуктов - градиент оверлей */
 .product-card-v3 .pc-image::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, 
-    transparent 0%, 
-    rgba(0,0,0,0.3) 70%,
-    rgba(0,0,0,0.6) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 70%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
   opacity: 0.6;
   transition: opacity 0.5s ease-out;
 }
@@ -159,7 +161,6 @@ body::before {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px oklch(0.52 0.22 280 / 0.2);
 }
-
 
 /* Мобильное меню - стили */
 #mobileMenu {
@@ -232,12 +233,46 @@ body.menu-open {
   overflow: hidden;
 }
 
+/* Fixed header stabilization for mobile browsers */
+:root {
+  --header-height: 60px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  padding-top: env(safe-area-inset-top);
+  height: calc(var(--header-height) + env(safe-area-inset-top));
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.site-main {
+  padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    backdrop-filter: none;
+    background-color: rgba(8, 8, 12, 0.88);
+  }
+}
+
 /* Кастомный брейкпоинт для диапазона 767px-925px */
 @media (min-width: 768px) and (max-width: 925px) {
   .menu-tablet-flex {
     display: flex !important;
   }
-  
+
   .menu-tablet-hidden {
     display: none !important;
   }
@@ -250,7 +285,6 @@ body.menu-open {
   }
 }
 
-
 /* Отключение hover-эффектов на touch-устройствах для карточек продуктов */
 @media (hover: none) and (pointer: coarse) {
   .product-card-v3:hover {
@@ -258,19 +292,16 @@ body.menu-open {
     border-color: rgba(255, 255, 255, 0.1) !important;
     box-shadow: var(--shadow-card) !important;
   }
-  
+
   .product-card-v3:hover::after {
     opacity: 0 !important;
   }
-  
+
   .product-card-v3:hover .pc-image {
     filter: brightness(1) contrast(1) !important;
   }
-  
+
   .product-card-v3:hover h3::before {
     height: 0 !important;
   }
 }
-
-                                  
-
