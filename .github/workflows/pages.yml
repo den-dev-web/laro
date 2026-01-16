@@ -29,6 +29,10 @@ jobs:
         run: npm ci
       - name: Build CSS
         run: npm run build:css
+      - name: Verify CSS output
+        run: |
+          ls -la dist
+          test -f dist/styles.css
       - name: Prepare publish directory
         run: |
           mkdir -p public/dist
