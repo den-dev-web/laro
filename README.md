@@ -70,6 +70,35 @@ Images are served via `<picture>` as AVIF → WebP → original PNG/JPG fallback
 
 ---
 
+## ✉️ Contact Form Setup
+
+Out of the box the form `#contactForm` in `index.html` has `action="#"` and runs in **demo mode**: it validates input and shows "Message sent", but nothing is actually sent.
+
+To connect a real form service (Formspree, Web3Forms or your own endpoint):
+
+1. In `index.html`, replace `action="#"` on `#contactForm` with the service endpoint URL.
+2. Add the hidden fields the service requires inside the form, e.g. for Web3Forms:
+   ```html
+   <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY" />
+   ```
+3. Send a test submission and confirm the email arrives.
+
+`scripts.js` needs no changes: it submits the form via `fetch` (`POST`, `FormData`, `Accept: application/json`) to the `action` URL and treats any non-2xx response as an error. The submitted fields are `name`, `email`, `message`, plus the `website` anti-spam honeypot (bots fill it, such submissions are silently dropped).
+
+---
+
+## 🌐 Production Domain Setup
+
+The site URL `https://den-dev-web.github.io/laro/` is hardcoded in the `<head>` of `index.html`. When moving to a production domain, replace it in:
+
+- `<link rel="canonical">`
+- `<meta property="og:url">`
+- `<meta property="og:image">` (keep the `assets/og-image.jpg` path)
+
+Then check link previews of the deployed page (e.g. opengraph.xyz, Facebook Sharing Debugger).
+
+---
+
 ## 🎯 What This Project Demonstrates
 
 - Ability to build clean, responsive landing pages without frameworks

@@ -42,8 +42,10 @@
   /* Custom shadows */
   --shadow-glow-purple: 0px 0px 180px oklch(0.52 0.22 280 / 0.3);
   --shadow-glow-blue: 0px 0px 140px oklch(0.45 0.25 270 / 0.35);
-  --shadow-card: 0 8px 32px oklch(0 0 0 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.1);
-  --shadow-card-hover: 0 24px 80px oklch(0.52 0.22 280 / 0.25),
+  --shadow-card:
+    0 8px 32px oklch(0 0 0 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.1);
+  --shadow-card-hover:
+    0 24px 80px oklch(0.52 0.22 280 / 0.25),
     0 0 0 1px oklch(0.52 0.22 280 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.2);
 
   /* Custom easing functions */
@@ -152,7 +154,8 @@ body::before {
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle 520px at top left,
       rgba(70, 0, 255, 0.55) 0%,
       transparent 70%
@@ -419,9 +422,6 @@ html {
 
 .site-main {
   padding-top: calc(var(--header-height) + env(safe-area-inset-top));
-  /* Rotated .bg-color-right glow sticks out past the right edge; without clipping the page
-     gets horizontal overflow, mobile layout viewport widens and the fixed header drifts on scroll.
-     clip (not hidden) keeps the vertical glow visible and does not create a scroll container. */
   overflow-x: clip;
 }
 
