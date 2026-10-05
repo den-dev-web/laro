@@ -18,7 +18,8 @@ The goal of the project is to demonstrate **clean layout composition, responsive
 - **HTML5** — semantic markup and page structure  
 - **Tailwind CSS v4** — utility-first styling and design tokens  
 - **JavaScript (Vanilla)** — interactive behavior without frameworks  
-- **No build tools** — manually structured static project
+- **PostCSS + @tailwindcss/postcss** — CSS build into `dist/styles.css` (minified for production)
+- **GitHub Actions** — builds CSS and deploys to GitHub Pages on push to `main`
 
 ---
 
@@ -51,9 +52,21 @@ The goal of the project is to demonstrate **clean layout composition, responsive
 
 ## 🧪 Local Usage
 
-The project is fully static and does not require any setup.
+The page is static, but the CSS must be built first: `index.html` loads `dist/styles.css`, which is not stored in the repository.
 
-You can run it locally by simply opening `index.html` in a browser.
+```bash
+npm ci                # install dependencies
+npm run build:css     # production build (minified) → dist/styles.css
+npm run dev           # or: watch mode with source maps while editing
+```
+
+Then serve the folder with any static server and open http://localhost:8000:
+
+```bash
+python3 -m http.server 8000
+```
+
+Images are served via `<picture>` as AVIF → WebP → original PNG/JPG fallback, so all three formats in `assets/` must be kept.
 
 ---
 

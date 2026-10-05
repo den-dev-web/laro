@@ -1,14 +1,14 @@
 /* Tailwind CSS 4 import */
 @import "tailwindcss";
 
-/* Theme configuration согласно Tailwind 4 */
+/* Theme configuration (Tailwind 4) */
 @theme {
-  /* Основные цвета - используем oklch для лучшей цветопередачи */
+  /* Base colors - oklch for better color reproduction */
   --color-secondary: oklch(0.65 0.01 0);
   --color-accent-purple: oklch(0.52 0.22 280);
   --color-accent-blue: oklch(0.45 0.25 270);
 
-  /* Цвета с прозрачностью для градиентов и opacity модификаторов */
+  /* Colors with alpha for gradients and opacity modifiers */
   --color-accent-purple-10: oklch(0.52 0.22 280 / 0.1);
   --color-accent-purple-25: oklch(0.52 0.22 280 / 0.25);
   --color-accent-purple-30: oklch(0.52 0.22 280 / 0.3);
@@ -17,7 +17,7 @@
   --color-accent-blue-10: oklch(0.45 0.25 270 / 0.1);
   --color-accent-blue-35: oklch(0.45 0.25 270 / 0.35);
 
-  /* Белый с различной прозрачностью */
+  /* White with various alpha levels */
   --color-white-03: oklch(1 0 0 / 0.03);
   --color-white-04: oklch(1 0 0 / 0.04);
   --color-white-05: oklch(1 0 0 / 0.05);
@@ -25,33 +25,124 @@
   --color-white-20: oklch(1 0 0 / 0.2);
   --color-white-75: oklch(1 0 0 / 0.75);
 
-  /* Черный с прозрачностью */
+  /* Black with alpha */
   --color-black-30: oklch(0 0 0 / 0.3);
 
-  /* Специальные цвета */
+  /* Special colors */
   --color-border-header: oklch(0.05 0 0 / 0.5);
 
-  /* Кастомные шрифты */
+  /* Custom fonts */
   --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-grotesk: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 
-  /* Кастомные размеры текста */
+  /* Custom text sizes */
   --text-52: 3.25rem;
   --text-52--line-height: 1.1;
 
-  /* Кастомные тени */
+  /* Custom shadows */
   --shadow-glow-purple: 0px 0px 180px oklch(0.52 0.22 280 / 0.3);
   --shadow-glow-blue: 0px 0px 140px oklch(0.45 0.25 270 / 0.35);
   --shadow-card: 0 8px 32px oklch(0 0 0 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.1);
   --shadow-card-hover: 0 24px 80px oklch(0.52 0.22 280 / 0.25),
     0 0 0 1px oklch(0.52 0.22 280 / 0.3), inset 0 1px 0 oklch(1 0 0 / 0.2);
 
-  /* Кастомные easing функции */
+  /* Custom easing functions */
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
 }
 
-/* Global background with radial gradient blur spots - нельзя выразить через Tailwind */
+/* Reusable components built from Tailwind utilities.
+   Components layer: utilities added next to them in HTML can still override them. */
+@layer components {
+  /* Partner logo tile */
+  .partner-logo {
+    @apply w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
+  }
+  .partner-logo-img {
+    @apply max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain;
+  }
+
+  /* Product card */
+  .product-card-v3 {
+    @apply flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100;
+  }
+  .pc-image {
+    @apply w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1];
+  }
+  .product-card-body {
+    @apply relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5;
+  }
+  .product-card-title {
+    @apply text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full;
+  }
+
+  /* Social icon button */
+  .social-icon {
+    @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all;
+  }
+  .social-icon-svg {
+    @apply w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors;
+  }
+
+  /* Info card (About, Who we work with, Contacts) */
+  .info-card {
+    @apply bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
+  }
+  .info-card-title {
+    @apply my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white;
+  }
+  .info-card-text {
+    @apply text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6];
+  }
+
+  /* Section heading */
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-52 mb-4 md:mb-6 font-bold text-white leading-[1.1] tracking-[-0.02em];
+  }
+
+  /* Desktop navigation link */
+  .nav-link {
+    @apply flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors;
+  }
+
+  /* Mobile navigation link */
+  .mobile-nav-link {
+    @apply text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center;
+  }
+
+  /* Burger button line */
+  .mobile-menu-line {
+    @apply w-5 h-0.5 bg-white/75 transition-all duration-300;
+  }
+
+  /* Phone / email link with icon */
+  .contact-link {
+    @apply inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors;
+  }
+  .contact-icon {
+    @apply flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0;
+  }
+
+  /* Contact form */
+  .form-label {
+    @apply m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase;
+  }
+  .form-input {
+    @apply w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal;
+  }
+
+  /* Primary (white) button; width / alignment utilities are set per usage */
+  .btn-primary {
+    @apply bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all;
+  }
+
+  /* Outlined "Contact" pill; padding and typography are set per usage */
+  .btn-pill {
+    @apply border border-white/30 text-white rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all;
+  }
+}
+
+/* Global background with radial gradient blur spots - not expressible with Tailwind */
 body::before {
   content: "";
   position: fixed;
@@ -76,7 +167,7 @@ body::before {
   transform: translateZ(0);
 }
 
-/* Background glow elements - декоративные элементы фона */
+/* Background glow elements - decorative background */
 /* Background glow elements from Kinetiq template */
 .bg-element-wrapper {
   z-index: -1;
@@ -99,7 +190,7 @@ body::before {
   max-height: 923px;
   position: absolute;
   inset: 0% auto auto 0%;
-  transform: rotate(22deg) translateZ(0); /* GPU слой */
+  transform: rotate(22deg) translateZ(0); /* GPU layer */
 }
 
 .bg-color-right {
@@ -112,7 +203,7 @@ body::before {
   max-height: 923px;
   position: absolute;
   inset: 0% 10% auto auto;
-  transform: rotate(22deg) translateZ(0); /* GPU слой */
+  transform: rotate(22deg) translateZ(0); /* GPU layer */
 }
 
 .bg-color-right.offset {
@@ -120,8 +211,14 @@ body::before {
   top: -30%;
 }
 
-/* Псевдоэлемент ::after для изображений в карточках продуктов - градиент оверлей */
-.product-card-v3 .pc-image::after {
+/* Gradient overlay for product card images. It sits on the <picture> wrapper,
+   because <img> is a replaced element and cannot render ::before/::after */
+.product-card-media {
+  position: relative;
+  display: block;
+}
+
+.product-card-media::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -135,11 +232,11 @@ body::before {
   transition: opacity 0.5s ease-out;
 }
 
-.product-card-v3:hover .pc-image::after {
+.product-card-v3:hover .product-card-media::after {
   opacity: 0.8;
 }
 
-/* Кастомные утилиты через @utility для Tailwind 4 */
+/* Custom utilities via Tailwind 4 @utility */
 @utility backdrop-blur-3xl {
   backdrop-filter: blur(64px);
 }
@@ -152,7 +249,7 @@ body::before {
   backdrop-filter: saturate(180%);
 }
 
-/* Стили для иконок соцсетей */
+/* Social icons */
 .social-icon {
   transition: all 0.3s var(--ease-fluid);
 }
@@ -162,32 +259,32 @@ body::before {
   box-shadow: 0 4px 12px oklch(0.52 0.22 280 / 0.2);
 }
 
-/* Мобильное меню - стили */
+/* Mobile menu */
 #mobileMenu {
   transform: translateX(100%);
   will-change: transform;
 }
 
 #mobileMenu.menu-open {
-  transform: translateX(0) !important;
+  transform: translateX(0);
 }
 
 #mobileMenu.menu-closed {
-  transform: translateX(100%) !important;
+  transform: translateX(100%);
 }
 
-/* Overlay для мобильного меню */
+/* Mobile menu overlay */
 #mobileMenuOverlay.menu-open {
-  opacity: 1 !important;
-  pointer-events: auto !important;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #mobileMenuOverlay.menu-closed {
-  opacity: 0 !important;
-  pointer-events: none !important;
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* Анимация гамбургер-кнопки в крестик */
+/* Burger button to X animation */
 .mobile-menu-button[aria-expanded="true"] .mobile-menu-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -200,12 +297,72 @@ body::before {
   transform: rotate(-45deg) translate(7px, -6px);
 }
 
+/* Smooth anchor scrolling; disabled for users who prefer reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Reveal on scroll: scripts.js adds .reveal-ready to <html> and .is-revealed to [data-anim] elements.
+   Without JS or with reduced motion preferred, content is simply visible. */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-ready [data-anim]:not(.is-revealed) {
+    opacity: 0;
+  }
+
+  /* "backwards" keeps the hidden start state during data-delay; after the animation
+     the element returns to its own styles, so hover transforms keep working */
+  .reveal-ready [data-anim="fade-up"].is-revealed {
+    animation: reveal-fade-up 0.6s var(--ease-fluid) backwards;
+  }
+}
+
+/* No "to" keyframe: animates to the element's own opacity/transform */
+@keyframes reveal-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+/* Visible keyboard focus for all interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-accent-purple);
+  outline-offset: 3px;
+}
+
+/* Active form field highlight (also for mouse users) */
+#contactForm input:focus,
+#contactForm textarea:focus {
+  border-color: var(--color-accent-purple);
+}
+
+/* Form validation and submission states (set by scripts.js) */
+/* Same specificity as the :focus rule above, so an invalid field stays red while focused */
+#contactForm input[aria-invalid="true"],
+#contactForm textarea[aria-invalid="true"] {
+  border-color: var(--color-red-400);
+}
+
+#formStatus[data-state="error"] {
+  color: var(--color-red-400);
+}
+
+#contactForm button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
 /* Touch optimization */
 .touch-manipulation {
   touch-action: manipulation;
 }
 
-/* Touch-оптимизация для всех интерактивных элементов */
+/* Touch optimization for all interactive elements */
 button,
 a[href],
 input,
@@ -214,13 +371,13 @@ select {
   touch-action: manipulation;
 }
 
-/* Минимальные размеры touch-targets для кнопок и ссылок */
+/* Minimum touch target size for buttons and links */
 button,
 a[href]:not(.social-icon) {
   min-height: 44px;
 }
 
-/* Исключения для элементов, которым нужен полный touch-action */
+/* Exceptions for elements that need full touch-action */
 input[type="range"],
 input[type="file"],
 textarea {
@@ -228,7 +385,7 @@ textarea {
   min-height: auto;
 }
 
-/* Мобильное меню - предотвращение скролла body когда меню открыто */
+/* Mobile menu - prevent body scroll while the menu is open */
 body.menu-open {
   overflow: hidden;
 }
@@ -249,15 +406,23 @@ body.menu-open {
   top: 0;
   left: 0;
   right: 0;
-  height: var(--header-height);
   padding-top: env(safe-area-inset-top);
   height: calc(var(--header-height) + env(safe-area-inset-top));
   backface-visibility: hidden;
   will-change: transform;
 }
 
+/* Anchor navigation stops below the fixed header instead of under it */
+html {
+  scroll-padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+}
+
 .site-main {
   padding-top: calc(var(--header-height) + env(safe-area-inset-top));
+  /* Rotated .bg-color-right glow sticks out past the right edge; without clipping the page
+     gets horizontal overflow, mobile layout viewport widens and the fixed header drifts on scroll.
+     clip (not hidden) keeps the vertical glow visible and does not create a scroll container. */
+  overflow-x: clip;
 }
 
 @media (max-width: 767px) {
@@ -267,41 +432,41 @@ body.menu-open {
   }
 }
 
-/* Кастомный брейкпоинт для диапазона 767px-925px */
+/* Custom breakpoint for the 768px-925px range */
 @media (min-width: 768px) and (max-width: 925px) {
   .menu-tablet-flex {
-    display: flex !important;
+    display: flex;
   }
 
   .menu-tablet-hidden {
-    display: none !important;
+    display: none;
   }
 }
 
-/* Кастомный брейкпоинт для диапазона от 926px */
+/* Custom breakpoint from 926px */
 @media (min-width: 926px) {
   .menu-desktop-flex {
-    display: flex !important;
+    display: flex;
   }
 }
 
-/* Отключение hover-эффектов на touch-устройствах для карточек продуктов */
+/* Disable product card hover effects on touch devices */
 @media (hover: none) and (pointer: coarse) {
   .product-card-v3:hover {
-    transform: translateZ(0) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
-    box-shadow: var(--shadow-card) !important;
+    transform: translateZ(0);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-card);
   }
 
   .product-card-v3:hover::after {
-    opacity: 0 !important;
+    opacity: 0;
   }
 
   .product-card-v3:hover .pc-image {
-    filter: brightness(1) contrast(1) !important;
+    filter: brightness(1) contrast(1);
   }
 
   .product-card-v3:hover h3::before {
-    height: 0 !important;
+    height: 0;
   }
 }
