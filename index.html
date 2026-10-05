@@ -324,9 +324,18 @@
               class="relative w-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-xl md:backdrop-blur-3xl border border-white/10 md:hover:transform-[perspective(1000px)_rotateY(0deg)_rotateX(0deg)_scale(1.02)_translateZ(0)] transition-transform"
             >
               <!-- large product image -->
+              <!-- sizes mirror the hero grid: 1 column below lg, half of max-w-7xl above -->
               <picture>
-                <source srcset="assets/header.avif" type="image/avif" />
-                <source srcset="assets/header.webp" type="image/webp" />
+                <source
+                  srcset="assets/header-800.avif 800w, assets/header.avif 1300w"
+                  sizes="(min-width: 1280px) 592px, (min-width: 1024px) calc(50vw - 48px), calc(100vw - 32px)"
+                  type="image/avif"
+                />
+                <source
+                  srcset="assets/header-800.webp 800w, assets/header.webp 1300w"
+                  sizes="(min-width: 1280px) 592px, (min-width: 1024px) calc(50vw - 48px), calc(100vw - 32px)"
+                  type="image/webp"
+                />
                 <img
                   src="assets/header.jpg"
                   alt="Electronics products"
