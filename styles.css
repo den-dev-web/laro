@@ -292,6 +292,8 @@ body::before {
 #mobileMenu {
   transform: translateX(100%);
   will-change: transform;
+  /* Keeps the last menu items above the iPhone home indicator (viewport-fit=cover) */
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 #mobileMenu.menu-open {
