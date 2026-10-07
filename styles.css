@@ -55,6 +55,9 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 
   /* Custom text sizes */
+  --text-17: 1.0625rem;
+  --text-18: 1.125rem;
+  --text-22: 1.375rem;
   --text-52: 3.25rem;
   --text-52--line-height: 1.1;
 
@@ -77,10 +80,10 @@
 @layer components {
   /* Partner logo tile */
   .partner-logo {
-    @apply w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white-03 backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
+    @apply w-full xl:w-35 h-15 flex items-center justify-center grayscale opacity-40 bg-white-03 backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
   }
   .partner-logo-img {
-    @apply max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain;
+    @apply max-w-22.5 md:max-w-27.5 max-h-9 md:max-h-11 object-contain;
   }
 
   /* Product card */
@@ -91,10 +94,10 @@
     @apply w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1];
   }
   .product-card-body {
-    @apply relative z-[1] flex items-center min-h-[60px] px-4 py-3 md:px-8 md:py-5;
+    @apply relative z-[1] flex items-center min-h-15 px-4 py-3 md:px-8 md:py-5;
   }
   .product-card-title {
-    @apply text-white relative m-0 text-base md:text-[1.0625rem] inline-block before:content-[''] before:absolute before:left-[-2rem] before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full;
+    @apply text-white relative m-0 text-base md:text-17 inline-block before:content-[''] before:absolute before:-left-8 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-0 before:bg-gradient-to-b before:from-accent-purple before:to-accent-blue before:rounded-[2px] before:transition-[height] before:duration-400 before:ease-bounce group-hover:before:h-full;
   }
 
   /* Social icon button */
@@ -110,10 +113,10 @@
     @apply bg-white-03 backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white-10 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
   }
   .info-card-title {
-    @apply my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white;
+    @apply my-4 mx-0 text-lg md:text-22 font-semibold leading-[1.1] tracking-[-0.02em] text-white;
   }
   .info-card-text {
-    @apply text-secondary m-0 text-base md:text-[17px] font-normal leading-[1.6];
+    @apply text-secondary m-0 text-base md:text-17 font-normal leading-[1.6];
   }
 
   /* Section heading */
@@ -149,12 +152,12 @@
     @apply m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase;
   }
   .form-input {
-    @apply w-full p-2.5 md:p-3 rounded-lg bg-white-05 border border-white-10 text-white-75 text-base md:text-[17px] leading-[1.6] tracking-normal;
+    @apply w-full p-2.5 md:p-3 rounded-lg bg-white-05 border border-white-10 text-white-75 text-base md:text-17 leading-[1.6] tracking-normal;
   }
 
   /* Primary (white) button; width / alignment utilities are set per usage */
   .btn-primary {
-    @apply bg-white text-black px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all;
+    @apply bg-white text-black px-8 py-3 rounded-[40px] text-base md:text-17 leading-[1.2] tracking-[0.02em] font-semibold no-underline hover:bg-accent-purple hover:text-white hover:shadow-glow-purple transition-all;
   }
 
   /* Outlined "Contact" pill; padding and typography are set per usage */
