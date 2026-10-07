@@ -75,6 +75,19 @@
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
 }
 
+/* Long words (URLs, compound names) wrap instead of overflowing narrow cards */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    overflow-wrap: break-word;
+  }
+}
+
 /* Reusable components built from Tailwind utilities.
    Components layer: utilities added next to them in HTML can still override them. */
 @layer components {
