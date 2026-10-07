@@ -243,8 +243,10 @@ body::before {
   transition: opacity 0.5s ease-out;
 }
 
-.product-card-v3:hover .product-card-media::after {
-  opacity: 0.8;
+@media (hover: hover) {
+  .product-card-v3:hover .product-card-media::after {
+    opacity: 0.8;
+  }
 }
 
 /* Custom utilities via Tailwind 4 @utility */
@@ -265,9 +267,11 @@ body::before {
   transition: all 0.3s var(--ease-fluid);
 }
 
-.social-icon:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px oklch(0.52 0.22 280 / 0.2);
+@media (hover: hover) {
+  .social-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px oklch(0.52 0.22 280 / 0.2);
+  }
 }
 
 /* Mobile menu */
@@ -455,26 +459,5 @@ html {
 @media (min-width: 926px) {
   .menu-desktop-flex {
     display: flex;
-  }
-}
-
-/* Disable product card hover effects on touch devices */
-@media (hover: none) and (pointer: coarse) {
-  .product-card-v3:hover {
-    transform: translateZ(0);
-    border-color: rgba(255, 255, 255, 0.1);
-    box-shadow: var(--shadow-card);
-  }
-
-  .product-card-v3:hover::after {
-    opacity: 0;
-  }
-
-  .product-card-v3:hover .pc-image {
-    filter: brightness(1) contrast(1);
-  }
-
-  .product-card-v3:hover h3::before {
-    height: 0;
   }
 }
