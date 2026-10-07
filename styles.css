@@ -19,6 +19,7 @@
 
   /* Colors with alpha for gradients and opacity modifiers */
   --color-accent-purple-10: oklch(0.52 0.22 280 / 0.1);
+  --color-accent-purple-20: oklch(0.52 0.22 280 / 0.2);
   --color-accent-purple-25: oklch(0.52 0.22 280 / 0.25);
   --color-accent-purple-30: oklch(0.52 0.22 280 / 0.3);
   --color-accent-purple-50: oklch(0.52 0.22 280 / 0.5);
@@ -32,13 +33,23 @@
   --color-white-05: oklch(1 0 0 / 0.05);
   --color-white-10: oklch(1 0 0 / 0.1);
   --color-white-20: oklch(1 0 0 / 0.2);
+  --color-white-30: oklch(1 0 0 / 0.3);
   --color-white-75: oklch(1 0 0 / 0.75);
 
   /* Black with alpha */
   --color-black-30: oklch(0 0 0 / 0.3);
+  --color-black-40: oklch(0 0 0 / 0.4);
+  --color-black-60: oklch(0 0 0 / 0.6);
+  --color-black-95: oklch(0 0 0 / 0.95);
 
   /* Special colors */
   --color-border-header: oklch(0.05 0 0 / 0.5);
+  --color-header-mobile: oklch(0.1365 0.009 285.14 / 0.88);
+
+  /* Decorative background glows */
+  --color-glow-violet-55: oklch(0.4778 0.2991 275.49 / 0.55);
+  --color-glow-navy-60: oklch(0.263 0.1764 267.43 / 0.6);
+  --color-glow-indigo-60: oklch(0.4628 0.2709 269.75 / 0.6);
 
   /* Custom fonts */
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -66,7 +77,7 @@
 @layer components {
   /* Partner logo tile */
   .partner-logo {
-    @apply w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white/[0.03] backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
+    @apply w-full xl:w-[140px] h-[60px] flex items-center justify-center grayscale opacity-40 bg-white-03 backdrop-blur-[30px] transform translate-z-0 hover:grayscale-0 hover:opacity-100 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
   }
   .partner-logo-img {
     @apply max-w-[90px] md:max-w-[110px] max-h-[36px] md:max-h-[44px] object-contain;
@@ -74,7 +85,7 @@
 
   /* Product card */
   .product-card-v3 {
-    @apply flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white/[0.04] border border-white/10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100;
+    @apply flex flex-col overflow-hidden relative p-0 transform translate-z-0 isolate bg-white-04 border border-white-10 rounded-3xl transition-all duration-500 ease-bounce backdrop-blur-40 backdrop-saturate-180 shadow-card after:content-[''] after:absolute after:inset-0 after:rounded-3xl after:bg-gradient-to-br after:from-accent-purple-10 after:via-transparent after:to-accent-blue-10 after:opacity-0 after:transition-opacity after:duration-500 after:ease-out after:pointer-events-none hover:translate-z-0 hover:border-accent-purple-50 hover:shadow-card-hover hover:after:opacity-100;
   }
   .pc-image {
     @apply w-full h-auto object-cover mb-0 transform translate-z-0 aspect-[16/11] transition-[filter] duration-500 ease-out relative group-hover:brightness-[1.15] group-hover:contrast-[1.1];
@@ -88,15 +99,15 @@
 
   /* Social icon button */
   .social-icon {
-    @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all;
+    @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-lg bg-white-03 border border-white-10 hover:border-accent-purple hover:bg-accent-purple-20 transition-all;
   }
   .social-icon-svg {
-    @apply w-4 h-4 md:w-5 md:h-5 text-white/75 group-hover:text-white transition-colors;
+    @apply w-4 h-4 md:w-5 md:h-5 text-white-75 group-hover:text-white transition-colors;
   }
 
   /* Info card (About, Who we work with, Contacts) */
   .info-card {
-    @apply bg-white/[0.03] backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
+    @apply bg-white-03 backdrop-blur-[30px] p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white-10 hover:-translate-y-1 hover:shadow-glow-purple transition-all;
   }
   .info-card-title {
     @apply my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white;
@@ -112,22 +123,22 @@
 
   /* Desktop navigation link */
   .nav-link {
-    @apply flex items-center text-white/75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors;
+    @apply flex items-center text-white-75 no-underline text-sm uppercase py-2 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 transition-colors;
   }
 
   /* Mobile navigation link */
   .mobile-nav-link {
-    @apply text-white/75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white/5 transition-all text-center;
+    @apply text-white-75 no-underline text-base uppercase py-4 px-6 rounded-[40px] tracking-[0.05em] font-semibold opacity-75 hover:text-white hover:opacity-100 hover:bg-white-05 transition-all text-center;
   }
 
   /* Burger button line */
   .mobile-menu-line {
-    @apply w-5 h-0.5 bg-white/75 transition-all duration-300;
+    @apply w-5 h-0.5 bg-white-75 transition-all duration-300;
   }
 
   /* Phone / email link with icon */
   .contact-link {
-    @apply inline-flex items-center text-white/75 hover:text-white hover:opacity-100 transition-colors;
+    @apply inline-flex items-center text-white-75 hover:text-white hover:opacity-100 transition-colors;
   }
   .contact-icon {
     @apply flex items-center justify-center w-6 h-6 md:w-7 md:h-7 flex-shrink-0;
@@ -138,7 +149,7 @@
     @apply m-0 mb-2 text-sm text-white font-medium leading-[1.1] tracking-[-0.02em] uppercase;
   }
   .form-input {
-    @apply w-full p-2.5 md:p-3 rounded-lg bg-white/5 border border-white/10 text-white/75 text-base md:text-[17px] leading-[1.6] tracking-normal;
+    @apply w-full p-2.5 md:p-3 rounded-lg bg-white-05 border border-white-10 text-white-75 text-base md:text-[17px] leading-[1.6] tracking-normal;
   }
 
   /* Primary (white) button; width / alignment utilities are set per usage */
@@ -148,7 +159,7 @@
 
   /* Outlined "Contact" pill; padding and typography are set per usage */
   .btn-pill {
-    @apply border border-white/30 text-white rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all;
+    @apply border border-white-30 text-white rounded-[40px] opacity-100 hover:border-accent-purple hover:bg-accent-purple hover:text-white transition-all;
   }
 }
 
@@ -165,12 +176,12 @@ body::before {
   background:
     radial-gradient(
       circle 520px at top left,
-      rgba(70, 0, 255, 0.55) 0%,
+      var(--color-glow-violet-55) 0%,
       transparent 70%
     ),
     radial-gradient(
       circle 480px at center right,
-      rgba(10, 0, 120, 0.6) 0%,
+      var(--color-glow-navy-60) 0%,
       transparent 70%
     );
   filter: blur(200px);
@@ -191,7 +202,7 @@ body::before {
 }
 
 .bg-color-left {
-  background-color: rgba(45, 41, 236, 0.6);
+  background-color: var(--color-glow-indigo-60);
   opacity: 0.7;
   filter: blur(6.5vw);
   border-radius: 50%;
@@ -205,7 +216,7 @@ body::before {
 }
 
 .bg-color-right {
-  background-color: rgba(45, 41, 236, 0.6);
+  background-color: var(--color-glow-indigo-60);
   filter: blur(6.5vw);
   border-radius: 50%;
   width: 30vw;
@@ -236,8 +247,8 @@ body::before {
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    rgba(0, 0, 0, 0.3) 70%,
-    rgba(0, 0, 0, 0.6) 100%
+    var(--color-black-30) 70%,
+    var(--color-black-60) 100%
   );
   opacity: 0.6;
   transition: opacity 0.5s ease-out;
@@ -440,7 +451,7 @@ html {
 @media (max-width: 767px) {
   .site-header {
     backdrop-filter: none;
-    background-color: rgba(8, 8, 12, 0.88);
+    background-color: var(--color-header-mobile);
   }
 }
 

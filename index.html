@@ -55,7 +55,7 @@
   <body class="relative z-2 bg-black">
     <!-- NAV -->
     <header
-      class="site-header z-50 bg-transparent flex items-center backdrop-blur-xl md:backdrop-blur-3xl border-b-[1px] border-solid border-b-[rgba(2,0,0,.5)] will-change-transform transform-gpu"
+      class="site-header z-50 bg-transparent flex items-center backdrop-blur-xl md:backdrop-blur-3xl border-b border-solid border-b-border-header will-change-transform transform-gpu"
     >
       <div
         class="mx-auto max-w-7xl px-3 sm:px-4 flex items-center justify-between w-full"
@@ -106,7 +106,7 @@
             >Contact</a
           >
           <button
-            class="mobile-menu-button w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0"
+            class="mobile-menu-button w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white-03 border border-white-10 hover:border-accent-purple hover:bg-accent-purple-20 transition-all touch-manipulation flex-shrink-0"
             aria-label="Toggle menu"
             aria-controls="mobileMenu"
             aria-expanded="false"
@@ -119,7 +119,7 @@
 
         <!-- Mobile Menu Button (visible only below 767px) -->
         <button
-          class="mobile-menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white/[0.03] border border-white/10 hover:border-accent-purple hover:bg-accent-purple/20 transition-all touch-manipulation flex-shrink-0"
+          class="mobile-menu-button md:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 p-2 rounded-lg bg-white-03 border border-white-10 hover:border-accent-purple hover:bg-accent-purple-20 transition-all touch-manipulation flex-shrink-0"
           aria-label="Toggle menu"
           aria-controls="mobileMenu"
           aria-expanded="false"
@@ -134,7 +134,7 @@
     <!-- Mobile Menu Overlay (backdrop) -->
     <div
       id="mobileMenuOverlay"
-      class="lg:hidden fixed inset-0 bg-black/40 backdrop-blur-xl z-30 transition-opacity duration-300 ease-out opacity-0 pointer-events-none menu-closed"
+      class="lg:hidden fixed inset-0 bg-black-40 backdrop-blur-xl z-30 transition-opacity duration-300 ease-out opacity-0 pointer-events-none menu-closed"
     ></div>
 
     <!-- Mobile Navigation Menu (outside header for proper z-index) -->
@@ -142,7 +142,7 @@
       id="mobileMenu"
       aria-label="Mobile navigation"
       inert
-      class="lg:hidden fixed top-[calc(var(--header-height)+env(safe-area-inset-top))] right-0 bottom-0 w-[320px] max-w-[85vw] bg-black/95 backdrop-blur-3xl border-l border-white/10 transition-transform duration-300 ease-out z-40 overflow-y-auto menu-closed"
+      class="lg:hidden fixed top-[calc(var(--header-height)+env(safe-area-inset-top))] right-0 bottom-0 w-[320px] max-w-[85vw] bg-black-95 backdrop-blur-3xl border-l border-white-10 transition-transform duration-300 ease-out z-40 overflow-y-auto menu-closed"
     >
       <div class="flex flex-col p-6 gap-4">
         <a href="#about" class="mobile-nav-link mobile-menu-link">About</a>
@@ -180,7 +180,7 @@
               LARO
             </h1>
             <p
-              class="text-base md:text-lg lg:text-[22px] mt-4 md:mt-[24px] mb-6 md:mb-[40px] mx-0 text-white/75 leading-[1.6] font-normal"
+              class="text-base md:text-lg lg:text-[22px] mt-4 md:mt-[24px] mb-6 md:mb-[40px] mx-0 text-white-75 leading-[1.6] font-normal"
             >
               We provide reliable supplies of portable electronics with
               guaranteed speed and predictability.<br />
@@ -196,19 +196,19 @@
                 >Contact Us</a
               >
               <a
-                class="bg-transparent text-white px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline border border-white/30 hover:border-accent-blue hover:bg-accent-blue hover:text-white hover:shadow-glow-blue transition-all text-center w-full md:w-auto touch-manipulation"
+                class="bg-transparent text-white px-[32px] py-[12px] rounded-[40px] text-base md:text-[17px] leading-[1.2] tracking-[0.02em] font-semibold no-underline border border-white-30 hover:border-accent-blue hover:bg-accent-blue hover:text-white hover:shadow-glow-blue transition-all text-center w-full md:w-auto touch-manipulation"
                 href="#partners"
                 >See Partners</a
               >
             </div>
 
             <ul
-              class="flex flex-col md:flex-row gap-3 md:gap-4 list-none p-0 m-0 text-white/75 text-sm md:text-base lg:text-[17px] justify-start"
+              class="flex flex-col md:flex-row gap-3 md:gap-4 list-none p-0 m-0 text-white-75 text-sm md:text-base lg:text-[17px] justify-start"
             >
               <li class="flex items-center gap-2">
                 <span class="contact-icon">
                   <svg
-                    class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                    class="w-5 h-5 md:w-6 md:h-6 text-white-75"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -229,7 +229,7 @@
               <li class="flex items-center gap-2">
                 <span class="contact-icon">
                   <svg
-                    class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                    class="w-5 h-5 md:w-6 md:h-6 text-white-75"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -321,7 +321,7 @@
           >
             <!-- product montage / hero image placeholders -->
             <div
-              class="relative w-full rounded-2xl overflow-hidden bg-white/5 backdrop-blur-xl md:backdrop-blur-3xl border border-white/10 md:hover:transform-[perspective(1000px)_rotateY(0deg)_rotateX(0deg)_scale(1.02)_translateZ(0)] transition-transform"
+              class="relative w-full rounded-2xl overflow-hidden bg-white-05 backdrop-blur-xl md:backdrop-blur-3xl border border-white-10 md:hover:transform-[perspective(1000px)_rotateY(0deg)_rotateX(0deg)_scale(1.02)_translateZ(0)] transition-transform"
             >
               <!-- large product image -->
               <!-- sizes mirror the hero grid: 1 column below lg, half of max-w-7xl above -->
@@ -393,29 +393,29 @@
           </div>
 
           <div class="text-left">
-            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+            <p class="text-white-75 max-w-full m-0 opacity-75 font-bold">
               LARO is a dynamic international distributor of portable
               electronics, focused on speed, transparency and predictability of
               supply.
             </p>
-            <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
+            <p class="text-white-75 max-w-full m-0 opacity-75 font-normal">
               We connect manufacturers and retailers, ensuring seamless
               logistics, stable product availability, and a high level of
               service. Our model is based on precise warehouse network
               management and efficient collaboration with distributors and
               resellers.
             </p>
-            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+            <p class="text-white-75 max-w-full m-0 opacity-75 font-bold">
               LARO's key goal is to simplify the supply chain and make it as
               fast and reliable as possible.
             </p>
-            <p class="text-white/75 max-w-full m-0 opacity-75 font-normal">
+            <p class="text-white-75 max-w-full m-0 opacity-75 font-normal">
               We accumulate demanded devices, guarantee timely shipments, and
               maintain a high level of information for partners. This approach
               reduces operational risks, accelerates sales, and helps businesses
               grow confidently.
             </p>
-            <p class="text-white/75 max-w-full m-0 opacity-75 font-bold">
+            <p class="text-white-75 max-w-full m-0 opacity-75 font-bold">
               With us, companies receive not just a supplier, but a logistic
               partner with clear processes, a global perspective, and impeccable
               execution discipline.
@@ -434,7 +434,7 @@
             >
               Product Categories
             </h2>
-            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+            <p class="text-white-75 max-w-full m-0 font-normal opacity-75">
               The main categories of products that we regularly supply to our
               customers.
             </p>
@@ -658,7 +658,7 @@
         <div class="mx-auto max-w-7xl px-3 sm:px-4">
           <div class="text-left mb-10">
             <h2 data-anim="fade-up" class="section-title">Our Partners</h2>
-            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+            <p class="text-white-75 max-w-full m-0 font-normal opacity-75">
               We work with leading manufacturers and brands in the electronics
               industry.
             </p>
@@ -767,7 +767,7 @@
             >
               Contact Us
             </h2>
-            <p class="text-white/75 max-w-full m-0 font-normal opacity-75">
+            <p class="text-white-75 max-w-full m-0 font-normal opacity-75">
               Reach out for inquiries, quotes, and partnership discussions.
             </p>
           </div>
@@ -776,7 +776,7 @@
             class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4 transform-gpu"
           >
             <div
-              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10"
+              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white-10"
             >
               <h3
                 class="my-3 md:my-4 mx-0 text-lg md:text-[22px] font-semibold leading-[1.1] tracking-[-0.02em] text-white"
@@ -784,12 +784,12 @@
                 Get in touch
               </h3>
               <ul
-                class="list-none p-0 m-0 text-white/75 text-base md:text-[17px] justify-start flex-wrap"
+                class="list-none p-0 m-0 text-white-75 text-base md:text-[17px] justify-start flex-wrap"
               >
                 <li class="flex items-center gap-2">
                   <span class="contact-icon">
                     <svg
-                      class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                      class="w-5 h-5 md:w-6 md:h-6 text-white-75"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -810,7 +810,7 @@
                 <li class="flex items-center gap-2">
                   <span class="contact-icon">
                     <svg
-                      class="w-5 h-5 md:w-6 md:h-6 text-white/75"
+                      class="w-5 h-5 md:w-6 md:h-6 text-white-75"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -902,7 +902,7 @@
                   Office Location
                 </h4>
                 <div
-                  class="w-full h-[250px] md:h-[300px] rounded-xl overflow-hidden border border-white/10"
+                  class="w-full h-[250px] md:h-[300px] rounded-xl overflow-hidden border border-white-10"
                 >
                   <iframe
                     src="https://www.google.com/maps?q=43.6479,-79.3808&hl=en&z=15&output=embed"
@@ -924,7 +924,7 @@
 
             <form
               id="contactForm"
-              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white/10"
+              class="p-4 md:p-6 rounded-xl text-left transform translate-z-0 border border-white-10"
               method="post"
               action="#"
               novalidate
@@ -1018,7 +1018,7 @@
                 </button>
                 <div
                   id="formStatus"
-                  class="text-white/75 text-base md:text-[17px] justify-start flex-wrap mt-2"
+                  class="text-white-75 text-base md:text-[17px] justify-start flex-wrap mt-2"
                   aria-live="polite"
                 ></div>
               </div>
@@ -1030,11 +1030,11 @@
 
     <!-- FOOTER -->
     <footer
-      class="py-4 md:py-6 px-0 bg-black text-white border-t border-white/10 border-solid"
+      class="py-4 md:py-6 px-0 bg-black text-white border-t border-white-10 border-solid"
     >
       <div class="mx-auto max-w-7xl px-4">
         <div
-          class="text-center text-white/75 text-sm md:text-[17px] justify-start flex-wrap"
+          class="text-center text-white-75 text-sm md:text-[17px] justify-start flex-wrap"
         >
           © <span id="year"></span> LARO. All rights reserved.
         </div>
