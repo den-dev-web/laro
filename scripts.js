@@ -1,8 +1,10 @@
 // Page behavior: footer year, mobile menu, contact form validation and submission
 document.addEventListener('DOMContentLoaded', function () {
   // set year
-  const y = new Date().getFullYear();
-  document.getElementById('year').textContent = y;
+  const yearElement = document.getElementById('year');
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
 
   // Mobile menu toggle
   const mobileMenuButtons = document.querySelectorAll('.mobile-menu-button');
