@@ -9,6 +9,13 @@
     "dev": "npm run watch:css",
     "clean": "rm -rf dist/styles.css dist/styles.css.map"
   },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Edge versions",
+    "last 2 Firefox versions",
+    "Safari >= 16.4",
+    "iOS >= 16.4"
+  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "postcss": "^8.5.6",
